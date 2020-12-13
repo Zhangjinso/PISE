@@ -1,0 +1,42 @@
+--------------Options--------------
+angle: False
+batchSize: 1
+checkpoints_dir: ./result
+continue_train: False
+dataroot: /home/zjs/my/Pose-Transfer/fashion_data/
+dataset_mode: fashion
+display_env: painet
+display_id: 0
+display_port: 8096
+display_single_pane_ncols: 0
+display_winsize: 256
+fid_gt_path: None
+gpu_ids: 0
+image_nc: 3
+init_type: orthogonal
+isTrain: False
+lambda_content: 0.5
+lambda_g: 2.0
+lambda_rec: 5.0
+lambda_regularization: 30.0
+lambda_style: 200.0
+load_size: 256
+max_dataset_size: 9223372036854775807
+model: painet
+nThreads: 8
+name: painet
+netD: res
+netG: pose
+old_size: (256, 176)
+phase: test
+ratio_g2d: 0.1
+results_dir: ./eval_results/
+save_input: False
+scale: False
+serial_batches: True
+shift: False
+structure_nc: 18
+use_spect_d: True
+use_spect_g: False
+which_iter: latest
+----------------End----------------
