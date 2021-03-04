@@ -33,7 +33,7 @@ python train.py --name=fashion --model=painet --gpu_ids=0
 
 # Test
 
-You can directly download our test results from [baidu](https://pan.baidu.com/s/1qB27b4PKbJD6VB2SOl-1sA) (fetch code: abcd). <br>
+You can directly download our test results from [baidu](https://pan.baidu.com/s/16HiFP6hExXVSzbs9A_Bhbw) (fetch code: abcd). <br>
 Pre-trained checkpoint reported in our paper can be found from [baidu](https://pan.baidu.com/s/14v3LaCCGCHJUoqQ_wlyNpA) (fetch code: abcd) and put it in the folder (-->results-->fashion). 
 
 **Test by yourself** <br>
