@@ -18,8 +18,6 @@ class ParsingNet(nn.Module):
 
         self.conv1 = BlockEncoder(input_nc, ngf*2, ngf, norm_layer, act, use_spect)
         self.conv2 = BlockEncoder(ngf*2, ngf*4, ngf*4, norm_layer, act, use_spect)
-        #self.deform1 = Gated_conv(ngf*4, ngf*4, norm_layer=norm_layer)
-        #self.deform2 = Gated_conv(ngf*4, ngf*4, norm_layer=norm_layer)
 
         self.conv3 = BlockEncoder(ngf*4, ngf*8, ngf*8, norm_layer, act, use_spect)
         self.conv4 = BlockEncoder(ngf*8, ngf*16, ngf*16, norm_layer, act, use_spect)
@@ -176,7 +174,6 @@ class PoseGenerator(BaseNetwork):
         SPL2_onehot = SPL2_onehot.permute(0, 3, 1, 2)
         par2 = SPL2_onehot
         '''
-        ### my par logits   1007G.pth doesnot have these two rows
         parcode,mask = self.parnet(torch.cat((par1, pose1, pose2),1))
         par2 = parcode
         
