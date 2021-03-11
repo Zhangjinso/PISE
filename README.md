@@ -32,7 +32,7 @@ python train.py --name=fashion --model=painet --gpu_ids=0
 You can directly download our test results from [baidu](https://pan.baidu.com/s/16HiFP6hExXVSzbs9A_Bhbw) (fetch code: abcd) or [Google drive](https://drive.google.com/file/d/1u62gyQ46_qZGB6BlESpk0WLjcZ-NH8-F/view?usp=sharing). <br>
 Pre-trained checkpoint of human pose transfer reported in our paper can be found from [baidu](https://pan.baidu.com/s/14v3LaCCGCHJUoqQ_wlyNpA) (fetch code: abcd) or [Google drive](https://drive.google.com/file/d/1gcdzahJ-pE-bSQfcnrW__iXIViH_y-FB/view?usp=sharing) and put it in the folder (-->results-->fashion). 
 
-Pre-Trained checkpoint of texture transfe, region editing, style interpolation used in our paper can be found from [baidu](https://pan.baidu.com/s/1E025k57INvL0O8cdLi87og)(fetch code: abcd) or [Google drive](). Note that the model need to be changed.
+Pre-Trained checkpoint of texture transfe, region editing, style interpolation used in our paper can be found from [baidu](https://pan.baidu.com/s/1E025k57INvL0O8cdLi87og)(fetch code: abcd) or [Google drive](https://drive.google.com/file/d/1fMFBIkU1AEQaa3vbhba3oV0rU5YSr7GR/view?usp=sharing). Note that the model need to be changed.
 
 **Test by yourself** <br>
 
