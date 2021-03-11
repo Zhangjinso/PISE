@@ -24,7 +24,7 @@ Parsing data can be found from [baidu](https://pan.baidu.com/s/19boQPJnrq2wASSMq
 ```
 python train.py --name=fashion --model=painet --gpu_ids=0
 ```
-**Note that if you want to train a pose transfer model as well as texture transfer and region editing, just comments the line 177 and 178, and uncomments line 162-176. ** 
+**Note that if you want to train a pose transfer model as well as texture transfer and region editing, just comments the line 177 and 178, and uncomments line 162-176.**
 
 
 # Test
