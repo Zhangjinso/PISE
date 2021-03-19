@@ -15,7 +15,8 @@ pip install scikit-image pillow pandas tqdm dominate natsort
 Data preparation for images and keypoints can follow [Pose Transfer](https://github.com/tengteng95/Pose-Transfer)
 
 
-Parsing data can be found from [baidu](https://pan.baidu.com/s/19boQPJnrq2wASSMqzl27NQ) (fectch code: abcd) or [Google drive](https://drive.google.com/file/d/1AcK4fuYOZw0i2Gi_X7kGdO3ffosIIUnj/view?usp=sharing).
+Parsing data for testing can be found from [baidu](https://pan.baidu.com/s/19boQPJnrq2wASSMqzl27NQ) (fectch code: abcd) or [Google drive](https://drive.google.com/file/d/1AcK4fuYOZw0i2Gi_X7kGdO3ffosIIUnj/view?usp=sharing).
+Parsing data for training can be found from [baidu](https://pan.baidu.com/s/1WHWk2Kz2JUEyFXC-g_LnvA) (fectch code: abcd) or [Google drive](https://drive.google.com/file/d/1dmW1NX9UZS8jTEjhP3364ktbSVIespIU/view?usp=sharing). You can get the data follow with [PGN}(https://github.com/Engineering-Course/CIHP_PGN), and re-organize the labels as you need.
 
 
 
