@@ -31,7 +31,7 @@ class BaseOptions():
         parser.add_argument('--image_nc', type=int, default=3 )
 
         # for setting inputs
-        parser.add_argument('--dataroot', type=str, default='/home/zjs/my/Pose-Transfer/fashion_data/')
+        parser.add_argument('--dataroot', type=str, default='./dataset/fashion_data/')
         parser.add_argument('--dataset_mode', type=str, default='fashion')
         parser.add_argument('--fid_gt_path', type=str)
         parser.add_argument('--serial_batches', action='store_true', help='if true, takes images in order to make batches, otherwise takes them randomly')
