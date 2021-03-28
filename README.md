@@ -12,11 +12,22 @@ pip install scikit-image pillow pandas tqdm dominate natsort
 
 # Data
 
-Data preparation for images and keypoints can follow [Pose Transfer](https://github.com/tengteng95/Pose-Transfer)
+Data preparation for images and keypoints can follow [Pose Transfer](https://github.com/tengteng95/Pose-Transfer) and [GFLA](https://github.com/RenYurui/Global-Flow-Local-Attention/blob/master/PERSON_IMAGE_GENERATION.md).
 
 
-Parsing data for testing can be found from [baidu](https://pan.baidu.com/s/19boQPJnrq2wASSMqzl27NQ) (fectch code: abcd) or [Google drive](https://drive.google.com/file/d/1AcK4fuYOZw0i2Gi_X7kGdO3ffosIIUnj/view?usp=sharing).
-Parsing data for training can be found from [baidu](https://pan.baidu.com/s/1WHWk2Kz2JUEyFXC-g_LnvA) (fectch code: abcd) or [Google drive](https://drive.google.com/file/d/1dmW1NX9UZS8jTEjhP3364ktbSVIespIU/view?usp=sharing). You can get the data follow with [PGN](https://github.com/Engineering-Course/CIHP_PGN), and re-organize the labels as you need.
+
+1. Download [deep fashion dataset](https://drive.google.com/drive/folders/0B7EVK8r0v71pYkd5TzBiclMzR00). You will need to ask a password from dataset maintainers.
+
+2. Download train/test key points annotations and the dataset list from [Google Drive](https://drive.google.com/open?id=1BX3Bxh8KG01yKWViRY0WTyDWbJHju-SL), including **fashion-pairs-train.csv**, **fashion-pairs-test.csv**, **fashion-annotation-train.csv**, **fashion-annotation-train.csv,** **train.lst**, **test.lst**. Put these files under the  `./fashion_data` directory.
+
+3. Run the following code to split the train/test dataset.
+
+   ```
+   python data/generate_fashion_datasets.py
+   ```
+
+4. Download parsing data, and put these files under the  `./fashion_data` directory. Parsing data for testing can be found from [baidu](https://pan.baidu.com/s/19boQPJnrq2wASSMqzl27NQ) (fectch code: abcd) or [Google drive](https://drive.google.com/file/d/1AcK4fuYOZw0i2Gi_X7kGdO3ffosIIUnj/view?usp=sharing).
+   Parsing data for training can be found from [baidu](https://pan.baidu.com/s/1WHWk2Kz2JUEyFXC-g_LnvA) (fectch code: abcd) or [Google drive](https://drive.google.com/file/d/1dmW1NX9UZS8jTEjhP3364ktbSVIespIU/view?usp=sharing). You can get the data follow with [PGN](https://github.com/Engineering-Course/CIHP_PGN), and re-organize the labels as you need.
 
 
 
@@ -26,6 +37,8 @@ Parsing data for training can be found from [baidu](https://pan.baidu.com/s/1WHW
 python train.py --name=fashion --model=painet --gpu_ids=0
 ```
 **Note that if you want to train a pose transfer model as well as texture transfer and region editing, just comments the line 177 and 178, and uncomments line 162-176.**
+
+**For training using multi-gpus, you can refer to [issue in GFLA](https://github.com/RenYurui/Global-Flow-Local-Attention/issues/22)** 
 
 
 # Test
@@ -59,12 +72,3 @@ If you use this code, please cite our paper.
 # Acknowledgments
 
 Our code is based on [GFLA](https://github.com/RenYurui/Global-Flow-Local-Attention).
-
-
-
-
-
-
-
-
-
