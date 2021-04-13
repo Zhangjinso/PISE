@@ -128,6 +128,7 @@ class VggEncoder(nn.Module):
         super(VggEncoder, self).__init__()
         # self.vgg = models.vgg19(pretrained=True).features
         vgg19 = torchvision.models.vgg.vgg19(pretrained=False)
+        #You can download vgg19-dcbb9e9d.pth from https://github.com/pytorch/vision/tree/master/torchvision/models and change the related path.
         vgg19.load_state_dict(torch.load('/home/zjs/.torch/models/vgg19-dcbb9e9d.pth'))
         self.vgg = vgg19.features
 
