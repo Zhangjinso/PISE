@@ -16,7 +16,7 @@ Data preparation for images and keypoints can follow [Pose Transfer](https://git
 
 
 
-1. Download [deep fashion dataset](https://drive.google.com/drive/folders/0B7EVK8r0v71pYkd5TzBiclMzR00). You will need to ask a password from dataset maintainers. Unzip and put it in the ;./fashion_data' directory.
+1. Download [deep fashion dataset](https://drive.google.com/drive/folders/0B7EVK8r0v71pYkd5TzBiclMzR00). You will need to ask a password from dataset maintainers. Unzip 'Img/img.zip' and put the folder named 'img' in the './fashion_data' directory.
 
 2. Download train/test key points annotations and the dataset list from [Google Drive](https://drive.google.com/open?id=1BX3Bxh8KG01yKWViRY0WTyDWbJHju-SL), including **fashion-pairs-train.csv**, **fashion-pairs-test.csv**, **fashion-annotation-train.csv**, **fashion-annotation-train.csv,** **train.lst**, **test.lst**. Put these files under the  `./fashion_data` directory.
 
