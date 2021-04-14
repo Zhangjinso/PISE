@@ -41,7 +41,7 @@ def make_dataset(dir):
 
 	# print(train_images, test_images)
 
-	for root, _, fnames in sorted(os.walk(os.path.join(dir, 'img_highres'))):
+	for root, _, fnames in sorted(os.walk(os.path.join(dir, 'img'))):
 		for fname in fnames:
 			if is_image_file(fname):
 				path = os.path.join(root, fname)
