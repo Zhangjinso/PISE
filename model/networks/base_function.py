@@ -625,8 +625,8 @@ class EFB(nn.Module):
                     component_mu = middle_mu.reshape(self.style_length, 1).expand(self.style_length, component_mask_area)
                     middle_avg[i].masked_scatter_(segmap.bool()[i, j], component_mu)
 
-            gamma_avg = self.conv_gamma(middle_avg)
-            beta_avg = self.conv_beta(middle_avg)
+        gamma_avg = self.conv_gamma(middle_avg)
+        beta_avg = self.conv_beta(middle_avg)
 
 
             #gamma_spade, beta_spade = self.Spade(segmap)
@@ -634,9 +634,9 @@ class EFB(nn.Module):
             #gamma_alpha = F.sigmoid(self.blending_gamma)
             #beta_alpha = F.sigmoid(self.blending_beta)
 
-            gamma_final = gamma_avg #+ (1 - gamma_alpha) * gamma_spade
-            beta_final =  beta_avg #+ (1 - beta_alpha) * beta_spade
-            out = norm1 * (1 + gamma_final) + beta_final
+        gamma_final = gamma_avg #+ (1 - gamma_alpha) * gamma_spade
+        beta_final =  beta_avg #+ (1 - beta_alpha) * beta_spade
+        out = norm1 * (1 + gamma_final) + beta_final
 
 
         return out
