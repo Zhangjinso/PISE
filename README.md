@@ -61,11 +61,13 @@ python test.py --name=fashion --model=painet --gpu_ids=0
 If you use this code, please cite our paper.
 
 ```
-@inproceedings{PISE,
-  title={{PISE}: Person Image Synthesis and Editing with Decoupled GAN},
-  author={Jinsong, Zhang and Kun, Li and Yu-Kun, Lai and Jingyu, Yang},
-  booktitle={Computer Vision and Pattern Recognition (CVPR)},
-  year={2021}
+@InProceedings{Zhang_2021_CVPR,
+    author    = {Zhang, Jinsong and Li, Kun and Lai, Yu-Kun and Yang, Jingyu},
+    title     = {{PISE}: Person Image Synthesis and Editing With Decoupled GAN},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {7982-7990}
 }
 ```
 
